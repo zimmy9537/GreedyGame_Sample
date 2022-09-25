@@ -5,28 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F8F8FB"
-    tools:context=".view.HomeActivity">
+    tools:context=".view.SaveActivity">
 
-    <ImageView
+    <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/new_breeze"
+        android:layout_marginTop="20dp"
+        android:text="Saved"
         android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/saved"
-        android:layout_width="37dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="36dp"
-        android:background="#94C77D"
-        android:src="@drawable/ic_saved"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -36,10 +35,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="18dp"
-        android:background="@drawable/card"
-        android:elevation="15dp"
         android:orientation="horizontal"
-        android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview">
 
@@ -49,54 +45,37 @@
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchEt"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:queryBackground="@color/white"
-            app:queryHint="Search" />
+            android:hint="search" />
 
-        <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/sortSpinner"
-            android:layout_width="20dp"
-            android:layout_height="15dp"
-            android:layout_gravity="center"
-            android:background="@drawable/below"
-            android:textColor="@android:color/transparent" />
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/newsRv"
+        android:id="@+id/articleRv"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="33dp"
-        android:paddingBottom="?attr/actionBarSize"
-        app:layout_constrainedHeight="true"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
-
-    <ProgressBar
-        android:id="@+id/progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/noInternet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Internet not available"
-        android:textSize="18sp"
+        android:text="No saved Articles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,18 +14,28 @@
         android:background="#E8E8F7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/newsImage"
         android:layout_width="344dp"
         android:layout_height="208dp"
         android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/saveImage"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:src="@drawable/ic_launcher_background"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/newsImage"-->
+<!--        app:layout_constraintTop_toTopOf="@id/newsImage" />-->
 
     <TextView
         android:id="@+id/headLine"
@@ -65,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:text="Read"
+        android:backgroundTint="#94C77D"
         app:layout_constraintEnd_toStartOf="@id/saveBt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/date" />
@@ -74,7 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:text="Read"
+        android:text="Save"
+        android:backgroundTint="#94C77D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/readBt"
         app:layout_constraintTop_toBottomOf="@id/date" />

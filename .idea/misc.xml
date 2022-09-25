@@ -5,11 +5,19 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.111810551558753" />
         <entry key="app/src/main/res/drawable/back.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/below.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bookmark.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/card.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/card_bg.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.2152099609375" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_saved.xml" value="0.141" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.1659637451171875" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.16146545410156254" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.9455445544554455" />
-        <entry key="app/src/main/res/layout/news_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_save.xml" value="0.18462066650390624" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24454895254382214" />
+        <entry key="app/src/main/res/layout/article_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/news_item.xml" value="0.1" />
       </map>
     </option>
   </component>
