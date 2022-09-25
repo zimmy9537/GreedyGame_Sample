@@ -30,11 +30,14 @@ persistent fomat. It requires the interface called DAO or data access object. it
 of database in a singleton pattern. also an ArticleItem data class is defined which uses the Entity in the room database.
 
 3. Picasso 
+
     It is a library to fill a image with some source image present at a given web url.
     
 4. Retrofit
+
     It is a library for network calls. I Have used it with Kotlin Coroutine so as to make GET request call to fetch the data from the api.
 
 5. View Binding
+
    I have used View Binding in the complete project. It provides features such as null safety etc.
    
